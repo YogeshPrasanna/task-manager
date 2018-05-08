@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Task Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-text">
+            TASK MANAGER
+        </div>
+    </header>
+
+    <div id="addItem">
+        <textarea id="itemContent" rows="4" cols="50">
+        </textarea>
+        <div id="add"> Add Item </div>
+    </div>
+
+
+    <div class="box" id="icebox" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div id="test" draggable="true" ondragstart="drag(event)">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="todo" class="box" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div class="box-header">TODO</div>
+    </div>
+    <div id="doing" class="box" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div class="box-header">DOING</div>
+    </div>
+    <div id="done" class="box" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div class="box-header">DONE</div>
+    </div>
+
+
+</body>
+
+</html>
